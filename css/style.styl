@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat)
+
+*
+  margin: 0
+  padding: 0
+  font-family: Montserrat, sans-serif
+
+html
+  overflow-x: hidden
+  text-align: center
+
+h1
+  margin: 3rem
+  font-weight: normal
+  color: tomato
+
+.divs
+  div
+    display: block
+    width: 100vw
+    background: tomato
+    padding: 10em 0
+    margin-top: 90vh
+    margin-bottom: 10vh
+    color: darken(tomato, 50%)
+    transition: all .5s ease
+    transform: translateX(100%)
+    &:nth-child(even)
+      transform: translateX(-100%)
+    &.active
+      transform: translateX(0)

@@ -1,0 +1,1 @@
+$('.divs div').scrollTrigger();

@@ -22,3 +22,8 @@ $('.my-elements').scrollTrigger({
   target: '.another-element'
 });
 ```
+```javascript
+// Customize the class name applied to activated elements
+$('.my-elements').scrollTrigger({
+  active: 'foo'
+});

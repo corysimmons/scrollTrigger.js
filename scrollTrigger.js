@@ -5,9 +5,9 @@
   $.fn.scrollTrigger = function(options) {
 
     var settings = $.extend({
+          active: 'scrolltrig--active',
           offset: 60,
-          target: this,
-          active: 'scrolltrig--active'
+          target: this
         }, options),
         el = this;
 

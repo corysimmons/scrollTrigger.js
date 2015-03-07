@@ -5,6 +5,7 @@
   $.fn.scrollTrigger = function(options) {
 
     var settings = $.extend({
+          active: 'scrolltrig--active',
           offset: 60,
           target: this
         }, options),
@@ -19,15 +20,15 @@
 
         if(settings.target != el) {
           if(sT > $(el[0]).offset().top - wH + settings.offset) {
-            $(settings.target).addClass('active');
+            $(settings.target).addClass(settings.active);
           } else {
-            $(settings.target).removeClass('active');
+            $(settings.target).removeClass(settings.active);
           }
         } else {
           if(sT > $(v).offset().top - wH + settings.offset) {
-            $(v).addClass('active');
+            $(v).addClass(settings.active);
           } else {
-            $(v).removeClass('active');
+            $(v).removeClass(settings.active);
           }
         }
 

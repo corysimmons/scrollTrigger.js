@@ -14,17 +14,16 @@
     var activate = function() {
 
       el.each(function(k, v) {
-        var sT = $(window).scrollTop(),
-            wH = $(window).height();
+        var sT = $(window).scrollTop();
 
         if(settings.target != el) {
-          if(sT > $(el[0]).offset().top - wH + settings.offset) {
+          if(sT > $(el[0]).offset().top - settings.offset) {
             $(settings.target).addClass('active');
           } else {
             $(settings.target).removeClass('active');
           }
         } else {
-          if(sT > $(v).offset().top - wH + settings.offset) {
+          if(sT > $(v).offset().top - settings.offset) {
             $(v).addClass('active');
           } else {
             $(v).removeClass('active');
